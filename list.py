@@ -110,3 +110,13 @@ print("Sorted ages in descending order:", ages)
 # returns a new sorted list without modifying the original list
 print(sorted(fruits))
 print(sorted(fruits, reverse=True))
+
+#range 
+my_numbers = list(range(1,10))
+print(my_numbers)
+
+my_numbers = list(range(5))
+print(my_numbers)
+
+my_numbers = list(range(10,0,-1))
+print(my_numbers)
