@@ -1,5 +1,6 @@
-st = {}
+st = set()
 print(st)
+print(type(st))
 
 fruits = {'banana', 'orange', 'mango', 'lemon', 'kiwi'}
 print(fruits)

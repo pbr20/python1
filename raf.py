@@ -130,3 +130,51 @@ print(B | A)
 print("Symmetric difference: ", A ^ B)
 print(A.symmetric_difference(B))
 del (A)
+
+
+# disctionary
+
+dog = {}
+print(type(dog))
+
+dog['name'] = 'musica'
+dog['color'] = 'golden'
+dog['breed'] = 'golden retriver'
+dog['legs'] = 4
+dog['age'] = 5
+print(dog)
+
+student = {
+    'first_name': 'Rithen',
+    'last_name': 'Barua',
+    'gender': 'male',
+    'age': 22,
+    'marital_status': 'unmarried',
+    'skills': ['Java', 'CPP', 'C', 'Python'],
+    'country': 'Bangladesh',
+    'city': 'Chattogram',
+    'address': {
+        'street': 'Avoy-Mitra Ghat',
+        'postal code': '4000'
+    }
+}
+
+print(len(student))
+
+print(type(student['skills']))
+
+student['skills'].append('SQL')
+print(student['skills'])
+
+keys = student.keys()
+print(keys)
+
+values = student.values()
+print(values)
+
+print(student.items())
+del student['marital_status']
+
+print(student)
+
+del student
