@@ -73,3 +73,28 @@ full_stack = all_end.copy()
 full_stack.insert(5, "Python")
 full_stack.insert(6, "SQL")
 print(full_stack)
+
+
+#Tuple practice
+
+tup = ()
+print(tup)
+
+sisters = ("Ipshita", "Ishika", "faye", "aicy")
+print(sisters)
+brother = ("kuya", "Tristan")
+print(brother)
+siblings = sisters + brother 
+print(siblings)
+
+print("I have ",len(siblings)," siblings")
+
+family_members = list(siblings)
+family_members.append("rupam")
+family_members.append("sumi")
+print(family_members)
+
+frist_sister, second_sister, third_sister, fourth_sister, first_brother, second_brother, father, mother = family_members
+print(first_brother)
+print(fourth_sister)
+print(father)
