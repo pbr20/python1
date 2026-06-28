@@ -75,7 +75,7 @@ full_stack.insert(6, "SQL")
 print(full_stack)
 
 
-#Tuple practice
+# Tuple practice
 
 tup = ()
 print(tup)
@@ -84,10 +84,10 @@ sisters = ("Ipshita", "Ishika", "faye", "aicy")
 print(sisters)
 brother = ("kuya", "Tristan")
 print(brother)
-siblings = sisters + brother 
+siblings = sisters + brother
 print(siblings)
 
-print("I have ",len(siblings)," siblings")
+print("I have ", len(siblings), " siblings")
 
 family_members = list(siblings)
 family_members.append("rupam")
@@ -98,3 +98,35 @@ frist_sister, second_sister, third_sister, fourth_sister, first_brother, second_
 print(first_brother)
 print(fourth_sister)
 print(father)
+
+# Set practice
+
+# sets
+it_companies = {'Facebook', 'Google', 'Microsoft',
+                'Apple', 'IBM', 'Oracle', 'Amazon'}
+A = {19, 22, 24, 20, 25, 26}
+B = {19, 22, 20, 25, 26, 24, 28, 27}
+age = [22, 19, 24, 25, 26, 24, 25, 24]
+
+print("Length of IT companies: ", len(it_companies))
+it_companies.add('Twitter')
+print(it_companies)
+it_companies.update(['Meta', 'Linux'])
+print(it_companies)
+it_companies.remove('Meta')
+print(it_companies)
+# with discard no error raise even if the item already doesn't exist
+it_companies.discard('Instagram')
+print(it_companies)
+
+print(A | B)
+print(A.union(B))
+print(A & B)
+print(A.intersection(B))
+print("Is A subset of B: ", A.issubset(B))
+print("Are A and B disjoint set: ", A.isdisjoint(B))
+print(A | B)
+print(B | A)
+print("Symmetric difference: ", A ^ B)
+print(A.symmetric_difference(B))
+del (A)
