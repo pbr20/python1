@@ -82,7 +82,7 @@ print(tup)
 
 sisters = ("Ipshita", "Ishika", "faye", "aicy")
 print(sisters)
-brother = ("kuya", "Tristan")
+brother = ("yura", "Tristan")
 print(brother)
 siblings = sisters + brother
 print(siblings)
