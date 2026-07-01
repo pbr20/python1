@@ -120,3 +120,25 @@ print(my_numbers)
 
 my_numbers = list(range(10,0,-1))
 print(my_numbers)
+
+sq_list = [x*x for x in range(1,11)]
+print(sq_list)
+
+#squares of odd numbers
+
+osq_list = [x*x for x in range(1,11) if x % 2 != 0]
+print(osq_list)
+
+lst = [ch.upper() for ch in 'comprehansion' if ch not in 'aeiou']
+print(lst)
+
+#exercise
+
+word_list = ['cat', 'dog', 'rabbit']
+letter_set = set()
+
+for word in word_list:
+  for letter in word:
+    letter_set.add(letter)
+letter_list = list(letter_set)
+print("the answer is : ",letter_set)
