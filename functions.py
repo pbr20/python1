@@ -1,3 +1,5 @@
+import math
+
 def greet(first_name, last_name):
     print(f"Hello {first_name} {last_name}")
     print("Welcome to the program.")
@@ -38,3 +40,15 @@ def multiply(*numbers):
 
 
 print(multiply(1, 2, 3, 4, 5))  # prints 120
+
+
+#finding root using newton method
+
+def square_root(n):
+    root = n/2 #initial guess
+
+    for k in range(50):
+        root = (1/2) * (root+(n/root))
+    return root
+
+print("Root by python: ",math.sqrt(3), "Root by customized function: ",square_root(3))
