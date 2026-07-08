@@ -178,3 +178,19 @@ del student['marital_status']
 print(student)
 
 del student
+
+# sorting
+
+# bubble sort
+
+
+def bubble_sort(Arr):
+    for i in range(len(Arr)-1):
+        for j in range(len(Arr)-1-i):
+            if (Arr[j] > Arr[j+1]):
+                Arr[j], Arr[j+1] = Arr[j+1], Arr[j]
+
+
+Arr = [5, 3, 2, 6, 8, 7, 3]
+bubble_sort(Arr)
+print(Arr)
